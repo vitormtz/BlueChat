@@ -1,0 +1,48 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# --- Extras: segurança e build (adicionados) ---
+# Chaves de assinatura e segredos - NUNCA versionar
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+secrets.properties
+key.properties
+
+# Saídas de build extras
+*.apk
+*.aab
+*.hprof
+
+# Cache do compilador Kotlin (Android Studio recente)
+.kotlin/
+
+# Arquivos temporários / logs
+*.log
+*.tmp
+*.bak
+*~
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Configurações locais extras do IDE
+/.idea/dictionaries
+/.idea/jarRepositories.xml
+/.idea/deploymentTargetDropDown.xml

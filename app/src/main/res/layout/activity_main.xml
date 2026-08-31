@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blue Chat"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonEnableDiscoverable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ficar Visível" />
+
+    <Button
+        android:id="@+id/buttonDiscover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Procurar Dispositivo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dispositivos encontrados:"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/listViewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Digite a mensagem"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Desconectado"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E0E0E0"
+        android:padding="5dp"
+        android:gravity="bottom" />
+
+</LinearLayout>
